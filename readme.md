@@ -1,9 +1,7 @@
-# Welcome to Assignment 5
-
-## <img width=30px src="assets/logo.png"/> DONATE BANGLADESH
+### <img width=30px src="assets/logo.png"/> DONATE BANGLADESH
 
 ## Key Rule
-
+ 
 - Do not ask about mark distribution in the group, as it will not be provided.
 - Do not post assignment feedback after receiving it. If you encounter issues or have complaints, please join a support session for discussion.
 - Avoid using "lorem ipsum" text. Use relevant and meaningful content instead.
