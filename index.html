@@ -1,24 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="cupcake">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate Bangladesh</title>
+    <!--Tailwind, DaisyUI and fontawesome link below-->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/9427a11101.js" crossorigin="anonymous"></script>
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!--Custom CSS-->
+    <style>
+        .font-lexend {
+            font-family: "Lexend", sans-serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#d1bead80',
+                        secondary: '#B4F461',
+                        third: '#1111110D',
+                        white: '#FFFFFF',
+                    },
+                    fontFamily: {
+                        Lexend: ['Lexend', 'Arial', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        img1: 'url(./images/feni.png)',
+                        img2: 'url(./images/noakhali.png)',
+                        img3: 'url(./images/quota-protest.png)',
+                    }
+                }
+            }
+        }
+
+    </script>
 </head>
 
-<body class="max-w-7xl mx-auto">
+<body class="max-w-7xl mx-auto font-lexend">
     <header>
-        <section class="navbar bg-yellow-100">
+        <section class="navbar bg-primary sticky fixed">
             <div class="navbar-start">
-                <button class="btn btn-accent w-20">Blog</button>
+                <button class="btn bg-secondary w-28">Blog</button>
             </div>
             <div class="navbar-center inline-flex text-black">
-                <a href="#" class="btn btn-ghost inline-flex items-center gap-2">
+                <a href="#" class="inline-flex items-center gap-2">
                     <img src="images/logo.png" alt="">
-                    <span class="text-xl">Donate Bangladesh</span>
+                    <span class="text-2xl font-bold">Donate Bangladesh</span>
                 </a>
             </div>
             <div class="navbar-end gap-4 text-black">
@@ -26,10 +61,79 @@
                 <span class="">6500</span>BDT
             </div>
         </section>
+        <section>
+            <div class="mt-12 flex justify-center items-center gap-8">
+                <button class="btn bg-secondary w-28">Donation</button>
+                <button class="btn w-28">History</button>
+            </div>
+        </section>
 
     </header>
     <main>
-
+        <div class="card bg-base-100 shadow-xl flex flex-row mt-12 gap-6">
+            <div class="card-body lg:w-[200%]">
+                <img src="./images/noakhali.png" alt="Shoes"/>
+            </div>
+            <div class="card-body space-y-2">
+                <div class="inline-flex items-center justify-around gap-6 text-black bg-third w-40 h-10 rounded-full">
+                    <img src="images/coin.png" alt="">
+                    <span class="">0</span>BDT
+                </div>
+                <h2 class="card-title">Donate for Flood at Feni, Bangladesh</h2>
+                <p>Feni, a district in southeastern Bangladesh, is grappling with devastating floods. 
+                    Thousands of families have lost their homes, livelihoods, and essential supplies. 
+                    Your donation can make a significant difference by providing food, clean water, shelter, 
+                    and medical aid to the affected communities.Your generosity 
+                    can bring hope and healing to the flood-stricken people of Feni.</p>
+                <input type="text" placeholder="Write Donation Amount Here" class="input input-bordered w-full" />
+                <div class="gap-4">
+                    <button class="btn bg-secondary w-full">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl flex flex-row mt-12 gap-6">
+            <div class="card-body lg:w-[200%]">
+                <img src="./images/feni.png" alt="Shoes"/>
+            </div>
+            <div class="card-body space-y-2">
+                <div class="inline-flex items-center justify-around gap-6 text-black bg-third w-40 h-10 rounded-full">
+                    <img src="images/coin.png" alt="">
+                    <span class="">600</span>BDT
+                </div>
+                <h2 class="card-title">Donate for Flood at NewKhali, Bangladesh</h2>
+                <p>NewKhali, a district in southeastern Bangladesh, is grappling with devastating floods. 
+                    Thousands of families have lost their homes, livelihoods, and essential supplies. Donate now to relief organizations working tirelessly on the 
+                    ground to provide immediate relief and long-term recovery support. Your generosity can bring 
+                    hope and healing to the flood-stricken people of Newkhali.
+                </p>
+                <input type="text" placeholder="Write Donation Amount Here" class="input input-bordered w-full" />
+                <div class="gap-4">
+                    <button class="btn bg-secondary w-full">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl flex flex-row mt-12 mb-12 gap-6">
+            <div class="card-body lg:w-[200%]">
+                <img src="./images/quota-protest.png" alt="Shoes"/>
+            </div>
+            <div class="card-body space-y-2">
+                <div class="inline-flex items-center justify-around gap-6 text-black bg-third w-40 h-10 rounded-full">
+                    <img src="images/coin.png" alt="">
+                    <span class="">2400</span>BDT
+                </div>
+                <h2 class="card-title">Donate for Quota Protest, Bangladesh</h2>
+                <p>Bangladesh's youth are rising in protest against the current quota system, demanding a 
+                    merit-based selection process for government jobs. This movement seeks to ensure equal 
+                    opportunities for all, regardless of their background. Every contribution, no 
+                    matter how small, can make a significant impact. Donate today and join the movement for a 
+                    brighter tomorrow.
+                </p>
+                <input type="text" placeholder="Write Donation Amount Here" class="input input-bordered w-full" />
+                <div class="gap-4">
+                    <button class="btn bg-secondary w-full">Buy Now</button>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
 
