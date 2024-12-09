@@ -1,1 +1,0 @@
-console.log('third.js added succesfully');
